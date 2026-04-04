@@ -1,13 +1,14 @@
-/* colorful theme */
+/* colorful dark theme */
 :root{
-  --bg-start: #fff7ed; /* warm light */
-  --bg-end: #eef2ff; /* soft blue */
-  --surface: #ffffff;
-  --primary: #7c3aed; /* violet */
+  --bg-start: #0f0f23; /* dark navy */
+  --bg-end: #1a1a2e; /* slightly lighter dark */
+  --surface: #95b3a0; /* dark gray-green */
+  --surface-alt: #356859; /* darker green */
+  --primary: #fffbe6; /* light yellow */
   --secondary: #06b6d4; /* cyan */
   --accent: #f97316; /* orange */
-  --muted: #6b7280;
-  --text: #0f1724;
+  --muted: #94a3b8; /* light gray */
+  --text: #252c28; /* dark green-gray */
 }
 
 body{
@@ -29,8 +30,46 @@ main.container {
   padding: 28px;
 }
 
-.hero h1 { margin: 0 0 8px 0; font-weight: 700; color: var(--primary); }
+.hero h1 { margin: 0 0 8px 0; font-weight: 700; color: rebeccapurple; }
 .hero p { margin: 0; color: var(--muted); }
+
+.section {
+  margin-top: 32px;
+  padding: 20px;
+  background: var(--surface);
+  border-radius: 12px;
+}
+
+.section h2 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.experience-item {
+  margin-bottom: 24px;
+  padding: 20px;
+  background: var(--surface);
+  border-radius: 12px;
+}
+
+.experience-item:nth-child(odd) {
+  background: var(--surface-alt);
+}
+
+.experience-item h3 {
+  color: var(--primary);
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.experience-item ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.experience-item li {
+  margin-bottom: 4px;
+}
 
 .projects-grid {
   display: grid;
@@ -72,4 +111,3 @@ main.container {
 /* small utilities */
 .text-primary { color: var(--primary); }
 .text-secondary { color: var(--secondary); }
-
