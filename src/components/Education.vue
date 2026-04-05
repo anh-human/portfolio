@@ -5,7 +5,7 @@ import { Code, Database, Cloud, Award } from "lucide-vue-next";
 <template>
   <section class="py-32 px-6 md:px-12 bg-surface-container-low" id="education">
     <div class="max-w-screen-2xl mx-auto">
-      <h2 
+      <h2
         v-motion
         :initial="{ opacity: 0, y: 20 }"
         :visible-once="{ opacity: 1, y: 0 }"
@@ -14,7 +14,7 @@ import { Code, Database, Cloud, Award } from "lucide-vue-next";
         Academic Foundation
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div 
+        <div
           v-motion
           :initial="{ opacity: 0, x: -20 }"
           :visible-once="{ opacity: 1, x: 0 }"
@@ -22,13 +22,13 @@ import { Code, Database, Cloud, Award } from "lucide-vue-next";
         >
           <div class="flex flex-col md:flex-row justify-between items-start mb-8">
             <div>
-              <h3 class="text-2xl font-bold text-on-surface">Bachelor of Science in Computer Science</h3>
-              <p class="text-secondary font-semibold">University of Technology</p>
+              <h3 class="text-2xl font-bold text-on-surface">Master in Software Engineering</h3>
+              <p class="text-secondary font-semibold">University of Rennes</p>
             </div>
-            <span class="bg-surface-variant px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-4 md:mt-0">Graduated May 2024</span>
+            <span class="bg-surface-variant px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-on-surface-variant mt-4 md:mt-0">2023 - 2025</span>
           </div>
           <p class="text-on-surface-variant mb-8 text-lg leading-relaxed">
-            Focusing on modern software engineering principles, distributed systems, and user-centric interface design. Awarded Dean's List for three consecutive years.
+            Advanced coursework in microservices architectures, CI/CD pipelines, and distributed systems. Building expertise in enterprise-scale software solutions and modern development practices.
           </p>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div class="bg-surface p-4 rounded-lg flex flex-col items-center text-center">
@@ -45,8 +45,8 @@ import { Code, Database, Cloud, Award } from "lucide-vue-next";
             </div>
           </div>
         </div>
-        
-        <div 
+
+        <div
           v-motion
           :initial="{ opacity: 0, x: 20 }"
           :visible-once="{ opacity: 1, x: 0 }"
@@ -55,8 +55,8 @@ import { Code, Database, Cloud, Award } from "lucide-vue-next";
           <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mb-6 shadow-inner">
             <Award class="text-on-primary w-10 h-10" />
           </div>
-          <h4 class="text-xl font-bold mb-2">GPA: 3.9/4.0</h4>
-          <p class="text-sm opacity-80 uppercase tracking-widest font-bold">Summa Cum Laude Candidate</p>
+          <h4 class="text-xl font-bold mb-2">Full-Stack Expertise</h4>
+          <p class="text-sm opacity-80 uppercase tracking-widest font-bold">Vue, TypeScript, Node.js, Docker, MongoDB</p>
         </div>
       </div>
     </div>

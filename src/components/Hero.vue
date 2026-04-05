@@ -5,7 +5,7 @@
 <template>
   <section class="min-h-[80vh] flex items-center px-6 md:px-12 max-w-screen-2xl mx-auto pt-32 pb-20">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-      <div 
+      <div
         v-motion
         :initial="{ opacity: 0, y: 20 }"
         :enter="{ opacity: 1, y: 0, transition: { duration: 600 } }"
@@ -21,7 +21,7 @@
           </p>
         </div>
         <div class="flex flex-wrap gap-4">
-          <button 
+          <button
             v-motion
             :hovered="{ scale: 0.98 }"
             :tapped="{ scale: 0.95 }"
@@ -29,7 +29,7 @@
           >
             Download CV
           </button>
-          <button 
+          <button
             v-motion
             :hovered="{ scale: 0.98 }"
             :tapped="{ scale: 0.95 }"
@@ -39,17 +39,17 @@
           </button>
         </div>
       </div>
-      
-      <div 
+
+      <div
         v-motion
         :initial="{ opacity: 0, scale: 0.9 }"
         :enter="{ opacity: 1, scale: 1, transition: { duration: 800, delay: 200 } }"
         class="lg:col-span-5 relative"
       >
         <div class="aspect-square rounded-full bg-surface-container-high overflow-hidden shadow-2xl relative z-10 border-8 border-surface-container-lowest/20">
-          <img 
-            class="w-full h-full object-cover" 
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbPsWfA3RFA21LC8pfOYxdu12jJCskCe5xypvsqkkKPxbxk6MpoYFVylLvmNbPWE9abzodsau_7rKGUFLMpWk7GNQCIQTX76F_2-OEshHCj9OUmauA-oJSNrDp2EJtizGO2vbZPvAmE7cMJvygoYUhhWRnqoyqxzrQLxtznfDThJzYwv9VqhAn8mOt-Kp5-EQe6fQb575W4kw-yKu3-f9k2A4Qr2d63vOTTJq7Hq045fn4d5vwtFoFRYGcV6LgArOn4eJB0Mm2q2mY" 
+          <img
+            class="w-full h-full object-cover"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbPsWfA3RFA21LC8pfOYxdu12jJCskCe5xypvsqkkKPxbxk6MpoYFVylLvmNbPWE9abzodsau_7rKGUFLMpWk7GNQCIQTX76F_2-OEshHCj9OUmauA-oJSNrDp2EJtizGO2vbZPvAmE7cMJvygoYUhhWRnqoyqxzrQLxtznfDThJzYwv9VqhAn8mOt-Kp5-EQe6fQb575W4kw-yKu3-f9k2A4Qr2d63vOTTJq7Hq045fn4d5vwtFoFRYGcV6LgArOn4eJB0Mm2q2mY"
             alt="Professional headshot"
             referrerPolicy="no-referrer"
           />

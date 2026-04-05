@@ -5,19 +5,19 @@
 <template>
   <nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline-variant/10">
     <div class="flex justify-between items-center px-6 md:px-12 py-6 max-w-screen-2xl mx-auto">
-      <div 
+      <div
         v-motion
         :initial="{ opacity: 0, x: -20 }"
         :enter="{ opacity: 1, x: 0 }"
         class="text-xl font-black text-primary tracking-tighter"
       >
-        The Digital Curator
+        Huu Anh Nguyen
       </div>
       <div class="hidden md:flex gap-8 items-center font-sans tracking-tight text-sm uppercase font-semibold">
         <a href="#education" class="text-on-surface-variant hover:text-secondary transition-colors duration-300">Education</a>
         <a href="#experience" class="text-on-surface-variant hover:text-secondary transition-colors duration-300">Experience</a>
         <a href="#projects" class="text-on-surface-variant hover:text-secondary transition-colors duration-300">Projects</a>
-        <button 
+        <button
           v-motion
           :hovered="{ scale: 0.95 }"
           :tapped="{ scale: 0.9 }"
