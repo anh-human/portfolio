@@ -1,5 +1,7 @@
 <script setup lang="ts">
-// No specific logic needed
+import { ref } from 'vue'
+
+const showCV = ref(false)
 </script>
 
 <template>
@@ -26,17 +28,13 @@
             :hovered="{ scale: 0.98 }"
             :tapped="{ scale: 0.95 }"
             class="primary-gradient text-on-primary px-8 py-4 rounded-lg font-bold shadow-lg cursor-pointer"
+            @click="showCV = !showCV"
           >
-            Download CV
+            Show CV
           </button>
-          <button
-            v-motion
-            :hovered="{ scale: 0.98 }"
-            :tapped="{ scale: 0.95 }"
-            class="bg-secondary-fixed text-on-secondary-fixed px-8 py-4 rounded-lg font-bold hover:opacity-90 transition-opacity cursor-pointer"
-          >
-            View Portfolio
-          </button>
+          <object v-if="showCV" data="assets/CV_2026-04_HuuAnhNGUYEN.pdf" type="application/pdf" width="100%" height="400px">
+            <p>Unable to display PDF.</p>
+          </object>
         </div>
       </div>
 
@@ -49,7 +47,7 @@
         <div class="aspect-square rounded-full bg-surface-container-high overflow-hidden shadow-2xl relative z-10 border-8 border-surface-container-lowest/20">
           <img
             class="w-full h-full object-cover"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbPsWfA3RFA21LC8pfOYxdu12jJCskCe5xypvsqkkKPxbxk6MpoYFVylLvmNbPWE9abzodsau_7rKGUFLMpWk7GNQCIQTX76F_2-OEshHCj9OUmauA-oJSNrDp2EJtizGO2vbZPvAmE7cMJvygoYUhhWRnqoyqxzrQLxtznfDThJzYwv9VqhAn8mOt-Kp5-EQe6fQb575W4kw-yKu3-f9k2A4Qr2d63vOTTJq7Hq045fn4d5vwtFoFRYGcV6LgArOn4eJB0Mm2q2mY"
+            src="../../assets/pic.jpg"
             alt="Professional headshot"
             referrerPolicy="no-referrer"
           />

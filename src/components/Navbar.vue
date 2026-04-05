@@ -23,7 +23,7 @@
           :tapped="{ scale: 0.9 }"
           class="primary-gradient text-on-primary px-6 py-2 rounded shadow-lg hover:shadow-xl transition-all cursor-pointer"
         >
-          Contact Me
+          <a href="#footer">Contact me</a>
         </button>
       </div>
       <div class="md:hidden text-primary">
