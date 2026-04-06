@@ -2,6 +2,9 @@
 import { ref } from 'vue'
 
 const showCV = ref(false)
+function openModal(s: string): void {
+  window.open(s,'_blank')
+}
 </script>
 
 <template>
@@ -28,13 +31,10 @@ const showCV = ref(false)
             :hovered="{ scale: 0.98 }"
             :tapped="{ scale: 0.95 }"
             class="primary-gradient text-on-primary px-8 py-4 rounded-lg font-bold shadow-lg cursor-pointer"
-            @click="showCV = !showCV"
+            @click="openModal('assets/CV_2026-04_HuuAnhNGUYEN.pdf')"
           >
             Show CV
           </button>
-          <object v-if="showCV" data="assets/CV_2026-04_HuuAnhNGUYEN.pdf" type="application/pdf" width="100%" height="400px">
-            <p>Unable to display PDF.</p>
-          </object>
         </div>
       </div>
 
