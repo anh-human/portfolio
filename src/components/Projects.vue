@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { ref } from 'vue'
+
 const projects = [
   {
     title: "SkillStack",
@@ -8,6 +10,7 @@ const projects = [
     code: "https://github.com/alexxbout/hackathon-istic"
   }
 ];
+const video = ref(false)
 </script>
 
 <template>
@@ -51,11 +54,24 @@ const projects = [
               </span>
             </div>
             <div class="flex gap-4 pt-4">
-              <button class="flex-1 py-2 bg-secondary-fixed text-on-secondary-fixed rounded text-xs font-bold uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all shadow-sm cursor-pointer">Live Demo</button>
+              <button
+                @click="video=!video"
+                class="flex-1 py-2 bg-secondary-fixed text-on-secondary-fixed rounded text-xs font-bold uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all shadow-sm cursor-pointer"
+              >
+                Watch demo
+              </button>
               <button class="flex-1 py-2 text-on-surface-variant border border-outline-variant rounded text-xs font-bold uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all cursor-pointer">
                 <a href="https://github.com/alexxbout/hackathon-istic"> View Code</a>
               </button>
             </div>
+            <object v-if="video">
+              <video controls>
+                <source src="../assets/demo-skillstack.mov" type="video/mp4" />
+                Télécharger la vidéo
+                <a href="/shared-assets/videos/flower.mp4">MP4</a>
+                .
+              </video>
+            </object>
           </div>
         </div>
       </div>
