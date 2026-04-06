@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import pic from '../assets/pic.jpg'
 
-const showCV = ref(false)
-function openModal(s: string): void {
-  window.open(s,'_blank')
-}
 </script>
 
 <template>
@@ -26,15 +23,16 @@ function openModal(s: string): void {
           </p>
         </div>
         <div class="flex flex-wrap gap-4">
-          <button
+          <a
             v-motion
             :hovered="{ scale: 0.98 }"
             :tapped="{ scale: 0.95 }"
             class="primary-gradient text-on-primary px-8 py-4 rounded-lg font-bold shadow-lg cursor-pointer"
-            @click="openModal('assets/CV_2026-04_HuuAnhNGUYEN.pdf')"
+            href="CV_2026-04_HuuAnhNGUYEN.pdf"
+            target="_blank"
           >
             Show CV
-          </button>
+          </a>
         </div>
       </div>
 
@@ -47,7 +45,7 @@ function openModal(s: string): void {
         <div class="aspect-square rounded-full bg-surface-container-high overflow-hidden shadow-2xl relative z-10 border-8 border-surface-container-lowest/20">
           <img
             class="w-full h-full object-cover"
-            src="../../assets/pic.jpg"
+            :src="pic"
             alt="Professional headshot"
             referrerPolicy="no-referrer"
           />
