@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import pic from '../assets/pic.jpg'
+import { useI18n } from 'vue-i18n'
 
+const { t } = useI18n()
 </script>
 
 <template>
@@ -14,12 +16,10 @@ import pic from '../assets/pic.jpg'
         class="lg:col-span-7 space-y-8"
       >
         <div class="space-y-4">
-          <span class="font-sans text-[0.6875rem] tracking-[0.05em] uppercase font-bold text-secondary">Available for Hire</span>
-          <h1 class="text-5xl md:text-7xl font-bold tracking-[-0.02em] leading-tight text-on-surface">
-            Crafting Scalable <span class="text-secondary">Full-Stack</span> Solutions.
-          </h1>
+          <span class="font-sans text-[0.6875rem] tracking-[0.05em] uppercase font-bold text-secondary">{{ t('hero.available') }}</span>
+          <h1 class="text-5xl md:text-7xl font-bold tracking-[-0.02em] leading-tight text-on-surface" v-html="t('hero.title')"></h1>
           <p class="text-lg text-on-surface-variant leading-relaxed max-w-xl">
-            A fresh developer with a curator's eye for clean code and seamless user experiences. Specializing in modern web architectures and robust backend systems.
+            {{ t('hero.description') }}
           </p>
         </div>
         <div class="flex flex-wrap gap-4">
@@ -31,7 +31,7 @@ import pic from '../assets/pic.jpg'
             href="CV_2026-04_HuuAnhNGUYEN.pdf"
             target="_blank"
           >
-            Show CV
+            {{ t('hero.showCV') }}
           </a>
         </div>
       </div>

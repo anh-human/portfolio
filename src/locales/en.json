@@ -1,0 +1,83 @@
+{
+  "navbar": {
+    "name": "Huu Anh Nguyen",
+    "education": "Education",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact me"
+  },
+  "hero": {
+    "available": "Available for Hire",
+    "title": "Crafting Scalable <span class='text-secondary'>Full-Stack</span> Solutions.",
+    "description": "A fresh developer with a curator's eye for clean code and seamless user experiences. Specializing in modern web architectures and robust backend systems.",
+    "showCV": "Show CV"
+  },
+  "education": {
+    "title": "Academic Foundation",
+    "degree": "Master in Software Engineering",
+    "university": "University of Rennes",
+    "period": "2023 - 2025",
+    "description": "Advanced coursework in microservices architectures, CI/CD pipelines, and distributed systems. Building expertise in enterprise-scale software solutions and modern development practices.",
+    "webDev": "Web Development",
+    "dataStructures": "Data Structures",
+    "distributedSystems": "Distributed Systems",
+    "expertise": "Full-Stack Expertise",
+    "tech": "Vue, TypeScript, Node.js, Docker, MongoDB"
+  },
+  "experience": {
+    "title": "Experience <br/><span class='text-secondary'>& Professional Growth</span>",
+    "experiences": [
+      {
+        "period": "Sept 2024 - Sept 2025",
+        "role": "Full-Stack Developer",
+        "company": "Blueway, Vannes (Alternance)",
+        "points": [
+          "Maintained and evolved 5 microservices out of 30 on the platform, implementing new features and improvements.",
+          "Migrated 5 services from Vue 2 to Vue 3, modernizing ~100 screens with updated UI components.",
+          "Improved backend test coverage from 67% to 84% through unit testing and TDD practices.",
+          "Ensured 100% of services have automated CI/CD workflows for reliable deployments."
+        ]
+      },
+      {
+        "period": "Jun 2024 - Aug 2024",
+        "role": "Backend Developer",
+        "company": "Les 1001 Clicks (Stage)",
+        "points": [
+          "Designed and developed the backend architecture for an e-commerce platform.",
+          "Implemented RESTful APIs and database schemas for product management and order processing.",
+          "Collaborated with frontend team on API integration and data structure optimization."
+        ]
+      },
+      {
+        "period": "May 2022 - Jul 2022",
+        "role": "QA Tester",
+        "company": "FPT Software, Hanoi (Stage)",
+        "points": [
+          "Participated in backend implementation of an ERP application.",
+          "Conducted functional and integration testing of core business modules.",
+          "Reported and tracked critical bugs through the development lifecycle."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Selected Works",
+    "viewAll": "View All Projects",
+    "watchDemo": "Watch demo",
+    "viewCode": "View Code",
+    "projects": [
+      {
+        "title": "SkillStack",
+        "description": "Application de réservation de ressources humaines",
+        "tags": ["Spring Boot", "Vue.js", "CI/CD"],
+        "code": "https://github.com/alexxbout/hackathon-istic"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2026 Huu Anh Nguyen. Developer Portfolio, handcrafted with precision.",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Mail to anhnguyenhuu9a1@gmail.com"
+  }
+}
