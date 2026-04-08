@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 @import "tailwindcss";
 
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-headline: "Inter", sans-serif;
-  --font-body: "Inter", sans-serif;
-  --font-label: "Inter", sans-serif;
-
+:root {
   --color-on-primary-fixed-variant: #1a4f43;
   --color-outline: #707975;
   --color-on-secondary-container: #fffbff;
@@ -54,6 +49,113 @@
   --color-primary-fixed: #b8eedc;
   --color-tertiary: #994100;
   --color-secondary: #712ae2;
+  --glass-bg: rgba(231, 255, 243, 0.8);
+}
+
+.dark {
+  --color-on-primary-fixed-variant: #9cd1c1;
+  --color-outline: #8c938f;
+  --color-on-secondary-container: #1d192b;
+  --color-inverse-surface: #b0e5d0;
+  --color-on-secondary-fixed: #d2bbff;
+  --color-surface-container-low: #0f1f17;
+  --color-surface-container-highest: #34483a;
+  --color-outline-variant: #404945;
+  --color-inverse-primary: #326557;
+  --color-error: #ffb4ab;
+  --color-on-surface: #b0e5d0;
+  --color-surface-container-high: #1a3324;
+  --color-primary-fixed-dim: #9cd1c1;
+  --color-surface-bright: #34483a;
+  --color-inverse-on-surface: #002117;
+  --color-secondary-fixed-dim: #d2bbff;
+  --color-on-primary: #002019;
+  --color-on-error: #690005;
+  --color-on-tertiary-container: #2d1600;
+  --color-surface-tint: #9cd1c1;
+  --color-on-tertiary: #4b2800;
+  --color-on-surface-variant: #b8eed9;
+  --color-on-secondary: #3a1d7a;
+  --color-on-background: #b0e5d0;
+  --color-background: #0a1a14;
+  --color-surface: #0a1a14;
+  --color-on-secondary-fixed-variant: #d2bbff;
+  --color-tertiary-fixed: #ffdbca;
+  --color-on-tertiary-fixed: #341100;
+  --color-surface-container: #0f1f17;
+  --color-tertiary-container: #723600;
+  --color-surface-variant: #404945;
+  --color-surface-dim: #0a1a14;
+  --color-primary-container: #1e4e40;
+  --color-secondary-container: #5d1bb8;
+  --color-surface-container-lowest: #05140e;
+  --color-primary: #9cd1c1;
+  --color-error-container: #93000a;
+  --color-on-error-container: #ffdad6;
+  --color-on-tertiary-fixed-variant: #ffb690;
+  --color-on-primary-fixed: #9cd1c1;
+  --color-on-primary-container: #1e4e40;
+  --color-tertiary-fixed-dim: #ffb690;
+  --color-secondary-fixed: #eaddff;
+  --color-primary-fixed: #b8eedc;
+  --color-tertiary: #ffb690;
+  --color-secondary: #d2bbff;
+  --glass-bg: rgba(10, 26, 20, 0.8);
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --color-on-primary-fixed-variant: var(--color-on-primary-fixed-variant);
+  --color-outline: var(--color-outline);
+  --color-on-secondary-container: var(--color-on-secondary-container);
+  --color-inverse-surface: var(--color-inverse-surface);
+  --color-on-secondary-fixed: var(--color-on-secondary-fixed);
+  --color-surface-container-low: var(--color-surface-container-low);
+  --color-surface-container-highest: var(--color-surface-container-highest);
+  --color-outline-variant: var(--color-outline-variant);
+  --color-inverse-primary: var(--color-inverse-primary);
+  --color-error: var(--color-error);
+  --color-on-surface: var(--color-on-surface);
+  --color-surface-container-high: var(--color-surface-container-high);
+  --color-primary-fixed-dim: var(--color-primary-fixed-dim);
+  --color-surface-bright: var(--color-surface-bright);
+  --color-inverse-on-surface: var(--color-inverse-on-surface);
+  --color-secondary-fixed-dim: var(--color-secondary-fixed-dim);
+  --color-on-primary: var(--color-on-primary);
+  --color-on-error: var(--color-on-error);
+  --color-on-tertiary-container: var(--color-on-tertiary-container);
+  --color-surface-tint: var(--color-surface-tint);
+  --color-on-tertiary: var(--color-on-tertiary);
+  --color-on-surface-variant: var(--color-on-surface-variant);
+  --color-on-secondary: var(--color-on-secondary);
+  --color-on-background: var(--color-on-background);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-on-secondary-fixed-variant: var(--color-on-secondary-fixed-variant);
+  --color-tertiary-fixed: var(--color-tertiary-fixed);
+  --color-on-tertiary-fixed: var(--color-on-tertiary-fixed);
+  --color-surface-container: var(--color-surface-container);
+  --color-tertiary-container: var(--color-tertiary-container);
+  --color-surface-variant: var(--color-surface-variant);
+  --color-surface-dim: var(--color-surface-dim);
+  --color-primary-container: var(--color-primary-container);
+  --color-secondary-container: var(--color-secondary-container);
+  --color-surface-container-lowest: var(--color-surface-container-lowest);
+  --color-primary: var(--color-primary);
+  --color-error-container: var(--color-error-container);
+  --color-on-error-container: var(--color-on-error-container);
+  --color-on-tertiary-fixed-variant: var(--color-on-tertiary-fixed-variant);
+  --color-on-primary-fixed: var(--color-on-primary-fixed);
+  --color-on-primary-container: var(--color-on-primary-container);
+  --color-tertiary-fixed-dim: var(--color-tertiary-fixed-dim);
+  --color-secondary-fixed: var(--color-secondary-fixed);
+  --color-primary-fixed: var(--color-primary-fixed);
+  --color-tertiary: var(--color-tertiary);
+  --color-secondary: var(--color-secondary);
 }
 
 @layer base {
@@ -67,6 +169,6 @@
 }
 
 .glass-nav {
-  background: rgba(231, 255, 243, 0.8);
+  background: var(--glass-bg);
   backdrop-filter: blur(20px);
 }
