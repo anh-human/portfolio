@@ -1,5 +1,9 @@
 <script setup lang="ts">
-const experiences = [
+import { useI18n } from 'vue-i18n'
+import { computed } from 'vue'
+
+const { t } = useI18n()
+const experiences = computed(()=>[
   {
     period: "Sept 2024 - Sept 2025",
     role: "Full-Stack Developer",
@@ -31,7 +35,7 @@ const experiences = [
       "Reported and tracked critical bugs through the development lifecycle."
     ]
   }
-];
+]);
 </script>
 
 <template>
@@ -44,7 +48,7 @@ const experiences = [
           :visible-once="{ opacity: 1, x: 0 }"
           class="text-3xl font-bold tracking-tight text-on-surface lg:sticky lg:top-32"
         >
-          Experience <br/><span class="text-secondary">& Professional Growth</span>
+          {{t('experience.title')}}
         </h2>
       </div>
       <div class="lg:col-span-8 space-y-24">
