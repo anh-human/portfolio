@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import cv_ano from '../assets/CV_anonymizer.png'
 
 const projects = [
   {
@@ -8,6 +9,13 @@ const projects = [
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBerm5zNYpL0TVm6vJjNMuQ_xEtbVkVvaEkbnHIGfOC68OlRgARsyZhmO2E7xyK2Xzb931vtQdaUA8YjuClTTkugJI_0IhURfeLqo4mytc79jbg7qC8SDrv1X6WHQ5JeRLu93WmZpR_GtjzftMA2hVwfRwg-Ru0WVO43cchvSkdLjTRKuYouSX3uh50Zu75MSUtad4uPMH_yBmRDV4Fo8hNKaTTFIqq7klhvB2X2oU9iEuytv9Go5DRo3zA29ba_IUPSaS0rgmQdOg4",
     tags: ["Spring Boot", "Vue.js", "CI/CD",],
     code: "https://github.com/alexxbout/hackathon-istic"
+  },
+  {
+    title: "CV anomyzer",
+    description: "Application d'anomymiser les informations personnelles sur un CV",
+    image: cv_ano,
+    tags: ["Node.js", "Vue.js","in progress"],
+    code: "https://github.com/anh-human/CV-anonymizer"
   }
 ];
 const video = ref(false)
@@ -55,13 +63,14 @@ const video = ref(false)
             </div>
             <div class="flex gap-4 pt-4">
               <button
+                v-if="!project.tags.includes('in progress')"
                 @click="video=!video"
                 class="flex-1 py-2 bg-secondary-fixed text-on-secondary-fixed rounded text-xs font-bold uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all shadow-sm cursor-pointer"
               >
                 Watch demo
               </button>
               <button class="flex-1 py-2 text-on-surface-variant border border-outline-variant rounded text-xs font-bold uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all cursor-pointer">
-                <a href="https://github.com/alexxbout/hackathon-istic"> View Code</a>
+                <a :href="project.code"> View Code</a>
               </button>
             </div>
             <object v-if="video">
