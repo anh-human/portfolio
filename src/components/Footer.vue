@@ -16,7 +16,7 @@
       <div class="flex gap-8 items-center font-sans text-[0.6875rem] tracking-[0.05em] uppercase font-bold">
         <a href="https://github.com/anh-human" class="text-on-surface-variant/60 hover:text-secondary transition-colors">GitHub</a>
         <a href="https://linkedin.com/in/huuanh/" class="text-on-surface-variant/60 hover:text-secondary transition-colors">LinkedIn</a>
-        <a href="mailto:anhnguyenhuu91@gmail.com" class="text-on-surface-variant/60 hover:text-secondary transition-colors">Mail to anhnguyenhuu9a1@gmail.com</a>
+        <a href="mailto:anhnguyenhuu9a1@gmail.com" class="text-on-surface-variant/60 hover:text-secondary transition-colors">Mail to anhnguyenhuu9a1@gmail.com</a>
       </div>
     </div>
   </footer>

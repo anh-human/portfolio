@@ -1,23 +1,23 @@
 {
   "navbar": {
     "name": "Huu Anh Nguyen",
-    "education": "Éducation",
+    "education": "Formation",
     "experience": "Expérience",
     "projects": "Projets",
-    "contact": "Contactez-moi"
+    "contact": "Contact"
   },
   "hero": {
-    "available": "Disponible pour embauche",
-    "title": "Création de solutions <span class='text-secondary'>Full-Stack</span> évolutives.",
-    "description": "Un développeur récent avec un œil de conservateur pour un code propre et des expériences utilisateur fluides. Spécialisé dans les architectures web modernes et les systèmes backend robustes.",
-    "showCV": "Voir CV"
+    "available": "Disponible pour de nouvelles opportunités",
+    "title": "Conception de solutions <span class='text-secondary'>Full-Stack</span> évolutives.",
+    "description": "Jeune développeur passionné par le code propre et les expériences utilisateur fluides. Spécialisé dans la conception d'architectures web modernes et de systèmes backend robustes.",
+    "showCV": "Consulter mon CV"
   },
   "education": {
-    "title": "Fondation Académique",
-    "degree": "Master en Ingénierie Logicielle",
+    "title": "Parcours académique",
+    "degree": "Master en Génie Logiciel",
     "university": "Université de Rennes",
     "period": "2023 - 2025",
-    "description": "Cours avancés en architectures de microservices, pipelines CI/CD et systèmes distribués. Construction d'expertise dans les solutions logicielles à l'échelle de l'entreprise et les pratiques de développement modernes.",
+    "description": "Formation approfondie en architectures microservices, pipelines CI/CD et systèmes distribués. Développement d'une expertise dans la conception de solutions logicielles d'entreprise et les pratiques modernes de développement.",
     "webDev": "Développement Web",
     "dataStructures": "Structures de Données",
     "distributedSystems": "Systèmes Distribués",
@@ -32,20 +32,20 @@
         "role": "Développeur Full-Stack",
         "company": "Blueway, Vannes (Alternance)",
         "points": [
-          "Maintenu et évolué 5 microservices sur 30 de la plateforme, implémentant de nouvelles fonctionnalités et améliorations.",
-          "Migré 5 services de Vue 2 à Vue 3, modernisant ~100 écrans avec des composants UI mis à jour.",
-          "Amélioré la couverture des tests backend de 67% à 84% grâce aux tests unitaires et aux pratiques TDD.",
-          "Assuré que 100% des services ont des workflows CI/CD automatisés pour des déploiements fiables."
+          "Maintenance et évolution de 5 microservices parmi les 30 de la plateforme, avec implémentation de nouvelles fonctionnalités et d'optimisations.",
+          "Migration de 5 services de Vue 2 vers Vue 3, modernisant environ 100 écrans avec des composants UI mis à jour.",
+          "Amélioration de la couverture des tests backend de 67% à 84% via la mise en place de tests unitaires et la pratique du TDD.",
+          "Automatisation complète (100%) des workflows CI/CD pour garantir des déploiements fiables."
         ]
       },
       {
-        "period": "Jun 2024 - Aug 2024",
+        "period": "Juin 2024 - Août 2024",
         "role": "Développeur Backend",
         "company": "Les 1001 Clicks (Stage)",
         "points": [
-          "Conçu et développé l'architecture backend pour une plateforme e-commerce.",
-          "Implémenté des APIs RESTful et des schémas de base de données pour la gestion des produits et le traitement des commandes.",
-          "Collaboré avec l'équipe frontend sur l'intégration des APIs et l'optimisation des structures de données."
+          "Conception et développement de l'architecture backend d'une plateforme e-commerce.",
+          "Conception et intégration d'API REST et de schémas de base de données pour la gestion des produits et le traitement des commandes.",
+          "Collaboration étroite avec l'équipe frontend pour l'intégration des API et l'optimisation des structures de données."
         ]
       },
       {
@@ -53,18 +53,18 @@
         "role": "Testeur QA",
         "company": "FPT Software, Hanoi (Stage)",
         "points": [
-          "Participé à l'implémentation backend d'une application ERP.",
-          "Conduit des tests fonctionnels et d'intégration des modules métier principaux.",
-          "Rapporté et suivi les bugs critiques tout au long du cycle de développement."
+          "Participation au développement backend d'une application ERP.",
+          "Réalisation de tests fonctionnels et d'intégration sur les modules métier clés.",
+          "Identification, signalement et suivi des anomalies critiques tout au long du cycle de développement."
         ]
       }
     ]
   },
   "projects": {
-    "title": "Travaux Sélectionnés",
-    "viewAll": "Voir Tous les Projets",
+    "title": "Sélection de projets",
+    "viewAll": "Voir tous les projets",
     "watchDemo": "Voir la démo",
-    "viewCode": "Voir le Code",
+    "viewCode": "Voir le code",
     "projects": [
       {
         "title": "SkillStack",
@@ -75,9 +75,9 @@
     ]
   },
   "footer": {
-    "copyright": "© 2026 Huu Anh Nguyen. Portfolio de Développeur, réalisé avec précision.",
+    "copyright": "© 2026 Huu Anh Nguyen. Portfolio de développeur, conçu avec soin et précision.",
     "github": "GitHub",
     "linkedin": "LinkedIn",
-    "email": "Envoyer un mail à anhnguyenhuu9a1@gmail.com"
+    "email": "Me contacter par e-mail"
   }
 }
