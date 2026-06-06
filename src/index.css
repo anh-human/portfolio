@@ -55,7 +55,7 @@
 .dark {
   --color-on-primary-fixed-variant: #9cd1c1;
   --color-outline: #8c938f;
-  --color-on-secondary-container: #1d192b;
+  --color-on-secondary-container: #eaddff;
   --color-inverse-surface: #b0e5d0;
   --color-on-secondary-fixed: #d2bbff;
   --color-surface-container-low: #0f1f17;
@@ -71,7 +71,7 @@
   --color-secondary-fixed-dim: #d2bbff;
   --color-on-primary: #002019;
   --color-on-error: #690005;
-  --color-on-tertiary-container: #2d1600;
+  --color-on-tertiary-container: #ffdbca;
   --color-surface-tint: #9cd1c1;
   --color-on-tertiary: #4b2800;
   --color-on-surface-variant: #b8eed9;
@@ -94,7 +94,7 @@
   --color-on-error-container: #ffdad6;
   --color-on-tertiary-fixed-variant: #ffb690;
   --color-on-primary-fixed: #9cd1c1;
-  --color-on-primary-container: #1e4e40;
+  --color-on-primary-container: #b8eedc;
   --color-tertiary-fixed-dim: #ffb690;
   --color-secondary-fixed: #eaddff;
   --color-primary-fixed: #b8eedc;
