@@ -71,6 +71,13 @@
         "description": "Application de réservation de ressources humaines",
         "tags": ["Spring Boot", "Vue.js", "CI/CD"],
         "code": "https://github.com/alexxbout/hackathon-istic"
+      },
+      {
+        "title": "CV Anonymizer",
+        "description": "Application permettant d'anonymiser les informations personnelles sur un CV",
+        "tags": ["Node.js", "Vue.js", "in progress"],
+        "code": "https://github.com/anh-human/CV-anonymizer",
+        "demo": "https://anh-human.github.io/CV-anonymizer/"
       }
     ]
   },

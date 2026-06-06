@@ -11,11 +11,12 @@ const projects = [
     code: "https://github.com/alexxbout/hackathon-istic"
   },
   {
-    title: "CV anomyzer",
-    description: "Application d'anomymiser les informations personnelles sur un CV",
+    title: "CV Anonymizer",
+    description: "Application permettant d'anonymiser les informations personnelles sur un CV",
     image: cv_ano,
-    tags: ["Node.js", "Vue.js","in progress"],
-    code: "https://github.com/anh-human/CV-anonymizer"
+    tags: ["Node.js", "Vue.js"],
+    code: "https://github.com/anh-human/CV-anonymizer",
+    demo: "https://anh-human.github.io/CV-anonymizer/"
   }
 ];
 const video = ref(false)
@@ -63,15 +64,29 @@ const video = ref(false)
             </div>
             <div class="flex gap-4 pt-4">
               <button
-                v-if="!project.tags.includes('in progress')"
+                v-if="!project.demo && !project.tags.includes('in progress')"
                 @click="video=!video"
-                class="flex-1 py-2 bg-secondary-fixed text-on-secondary-fixed rounded text-xs font-bold uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all shadow-sm cursor-pointer"
+                class="flex-1 py-2 bg-secondary-fixed text-on-secondary-fixed rounded text-xs font-bold uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all shadow-sm cursor-pointer text-center"
               >
                 Watch demo
               </button>
-              <button class="flex-1 py-2 text-on-surface-variant border border-outline-variant rounded text-xs font-bold uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all cursor-pointer">
-                <a :href="project.code"> View Code</a>
-              </button>
+              <a
+                v-if="project.demo"
+                :href="project.demo"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 py-2 text-center bg-secondary-fixed text-on-secondary-fixed rounded text-xs font-bold uppercase tracking-widest hover:bg-secondary hover:text-on-secondary transition-all shadow-sm cursor-pointer"
+              >
+                Live Demo
+              </a>
+              <a
+                :href="project.code"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 py-2 text-center text-on-surface-variant border border-outline-variant rounded text-xs font-bold uppercase tracking-widest hover:border-secondary hover:text-secondary transition-all cursor-pointer"
+              >
+                View Code
+              </a>
             </div>
             <object v-if="video">
               <video controls>
