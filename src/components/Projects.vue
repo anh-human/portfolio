@@ -7,14 +7,14 @@ const projects = [
     title: "SkillStack",
     description: "Application de réservation de ressources humaines",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBerm5zNYpL0TVm6vJjNMuQ_xEtbVkVvaEkbnHIGfOC68OlRgARsyZhmO2E7xyK2Xzb931vtQdaUA8YjuClTTkugJI_0IhURfeLqo4mytc79jbg7qC8SDrv1X6WHQ5JeRLu93WmZpR_GtjzftMA2hVwfRwg-Ru0WVO43cchvSkdLjTRKuYouSX3uh50Zu75MSUtad4uPMH_yBmRDV4Fo8hNKaTTFIqq7klhvB2X2oU9iEuytv9Go5DRo3zA29ba_IUPSaS0rgmQdOg4",
-    tags: ["Spring Boot", "Vue.js", "CI/CD",],
+    tags: ["Spring Boot", "Vue.js", "CI/CD","PostgresSQL, Kubernetes, Ansible"],
     code: "https://github.com/alexxbout/hackathon-istic"
   },
   {
     title: "CV Anonymizer",
     description: "Application permettant d'anonymiser les informations personnelles sur un CV",
     image: cv_ano,
-    tags: ["Node.js", "Vue.js"],
+    tags: ["Node.js", "Vue.js", "AI"],
     code: "https://github.com/anh-human/CV-anonymizer",
     demo: "https://anh-human.github.io/CV-anonymizer/"
   }
